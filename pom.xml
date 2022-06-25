@@ -56,7 +56,7 @@
                     <configuration>
                       <suiteXmlFiles>
                           <suiteXmlFile>${xmlSuiteFileName}</suiteXmlFile>
-                      </suiteXmlFiles>
+                       </suiteXmlFiles>
                     </configuration>
             </plugin>
         </plugins>
