@@ -20,8 +20,8 @@ public class HomeTest extends BaseTest {
         homePage = new HomePage(getDriver());
     }
 
-    @Test(testName = "", description = "")
-    public void test01() {
-
-    }
+//    @Test(testName = "", description = "")
+//    public void test01() {
+//
+//    }
 }

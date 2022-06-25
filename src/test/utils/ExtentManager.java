@@ -35,8 +35,8 @@ public class ExtentManager {
     public void createTestReport(WebDriver driver, Method method){
         this.driver = driver;
         extentTest = extentReports.createTest(getCustomTestName(method));
-        extentTest.assignAuthor("Kuba");
-        extentTest.assignDevice("Mac OS");
+        extentTest.assignAuthor("Maksym Buzin");
+        extentTest.assignDevice("Windows 11");
     }
 
     //To log a report message

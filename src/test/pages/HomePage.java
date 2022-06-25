@@ -17,7 +17,7 @@ public class HomePage extends BasePage {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy()
-    public WebElement name;
+    @FindBy(linkText = "Calendar")
+    public WebElement calendarLinkBtn;
 
 }

@@ -53,8 +53,24 @@ public class BasePage {
         return element.isDisplayed();
     }
 
+    public boolean isEnabled(WebElement element) {
+        moveIntoView(element);
+        highlightElement(element);
+        waitForElementVisibility(element);
+        return element.isEnabled();
+    }
+
+    public String getAttribute(WebElement element, String attribute) {
+        moveIntoView(element);
+        highlightElement(element);
+        waitForElementVisibility(element);
+        return element.getAttribute(attribute);
+    }
+
+
     public void hoverOver(WebElement element) {
         Actions actions = new Actions(driver);
+        highlightElement(element);
         actions.moveToElement(element).perform();
     }
 
