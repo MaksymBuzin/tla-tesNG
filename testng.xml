@@ -4,11 +4,7 @@
 <suite name="tla-testNG">
     <test name="Smoke">
        <classes>
-           <class name="tests.CalendarTest">
-               <methods>
-                   <include name="test01"></include>
-               </methods>
-           </class>
+           <class name="tests.CalendarTest"></class>
        </classes>
     </test>
 </suite>
