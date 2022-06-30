@@ -61,7 +61,13 @@ public class CalendarTest extends BaseTest {
         calendarPage.click(calendarPage.startDatee);
         calendarPage.click(calendarPage.nextDayStartDay);
         calendarPage.click(calendarPage.endDatee);
+        try{
         calendarPage.click(calendarPage.threeDayAheadEndDate);
+
+        }catch(Exception ex){
+           calendarPage.click(calendarPage.nextMothBtn);
+            calendarPage.click(calendarPage.threeDayAheadEndDate);
+        }
         calendarPage.click(calendarPage.submitBtn);
 
         String dates[] = calendarPage.getStartEndDates();//call method
