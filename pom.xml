@@ -65,11 +65,13 @@
                     <version>3.0.0-M7</version>
                     <configuration>
                       <suiteXmlFiles>
-                          <suiteXmlFile>${Suitexml}</suiteXmlFile>
+                          <suiteXmlFile>testng.xml</suiteXmlFile>
                       </suiteXmlFiles>
                     </configuration>
             </plugin>
         </plugins>
     </build>
+
+
 
 </project>
